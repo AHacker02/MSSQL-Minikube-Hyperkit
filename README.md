@@ -20,6 +20,9 @@
 - Start minikube
     > minikube start --driver=hyperkit --container-runtime=docker
 
+- Mount local folder to persist DB data
+    > minikube mount (Local path):/mssql
+
 - Setup docker-cli to pull docker images
     > eval $(minikube docker-env)
 
@@ -46,3 +49,4 @@
 - Use "minikube delete" to cleanup resources. This will delete VM and all database files.
 - Use "minikube pause" to pause the resources without cleaning the VM.
 - Use "minikube unpause" to resume the VM.
+- Use "minikube dashboard --url" to get a web dashboard
